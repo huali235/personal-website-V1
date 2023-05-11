@@ -1,0 +1,133 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --heading-font-family: "Karla", sans-serif;
+  --main-font-color: #1971c2;
+  --font-weight-300: 300;
+  --font-weight-500: 500;
+}
+
+body {
+  font-family: var(--heading-font-family);
+  font-weight: var(--font-weight-300);
+  margin: 0 auto;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 10rem 3.8rem;
+  font-size: 3.6rem;
+  height: 100vh;
+}
+
+.intro-description {
+  max-width: 70rem;
+}
+
+.name {
+  font-weight: var(--font-weight-500);
+}
+
+.intro-contact {
+  font-size: 1.8rem;
+}
+
+.highlight-email {
+  text-decoration: none;
+  color: inherit;
+  border-left: 2px solid var(--main-font-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.title {
+  display: grid;
+  justify-content: end;
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-500);
+  color: var(--main-font-color);
+}
+
+.background-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.4rem;
+  max-width: 55rem;
+  margin-left: 12rem;
+}
