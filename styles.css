@@ -131,3 +131,27 @@ body {
   max-width: 55rem;
   margin-left: 12rem;
 }
+
+.skills-section {
+  margin: 9.8rem 0;
+}
+
+.skills-content {
+  display: flex;
+  gap: 9rem;
+  margin-left: 12rem;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.list-title {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-500);
+  font-size: 1.6rem;
+}
