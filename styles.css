@@ -69,7 +69,7 @@ h6 {
 }
 
 :root {
-  --heading-font-family: "Karla", sans-serif;
+  --heading-font-family: 'Karla', sans-serif;
   --main-font-color: #1971c2;
   --font-weight-300: 300;
   --font-weight-500: 500;
@@ -153,5 +153,88 @@ body {
 .list-title {
   text-transform: uppercase;
   font-weight: var(--font-weight-500);
+  font-size: 1.6rem;
+}
+
+.projects-section {
+  margin: 9.8rem 0;
+  padding: 9.8rem 0;
+}
+
+.projects-content {
+  position: relative;
+}
+
+.slider-component {
+  width: 65rem;
+  height: 25rem;
+  overflow: hidden;
+  margin-left: 12rem;
+}
+
+.slider {
+  transition: transform 0.5s ease;
+}
+
+.img-slider > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.btn-slider-up,
+.btn-slider-down {
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.btn-slider-up {
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-slider-down {
+  bottom: -37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .slider-component[data-icon='up-arrow']::before {
+  content: '';
+  background-image: url(./imgs/arrow-up-outline.svg);
+  position: absolute;
+  top: -135px;
+  left: 480px;
+  width: 55px;
+  height: 55px;
+}
+
+.slider-component[data-icon='up-arrow']::after {
+  content: '';
+  background-image: url(./imgs/arrow-down-outline.svg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55px;
+  height: 55px;
+} */
+
+.flex-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.slider-description {
   font-size: 1.6rem;
 }
