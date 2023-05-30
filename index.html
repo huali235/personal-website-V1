@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <main>
@@ -97,74 +98,88 @@
           <p class="title">Featured Projects</p>
         </div>
         <div class="projects-content">
-          <div class="slider-component" data-icon="up-arrow">
+          <div class="sliders">
             <div class="slider slider-1">
-              <div class="slider-items flex-container">
-                <div class="img-slider">
+              <div class="img-slider">
+                <a
+                  href="https://omnifood-hussainali.netlify.app"
+                  target="_blank"
+                >
                   <img
                     src="./imgs/omnifood-screenshot.jpg"
                     alt="omnifood-screenshot"
                   />
-                </div>
-                <div class="slider-content">
-                  <h2 class="slider-header">Omnifood Website</h2>
-                  <p class="slider-description">
-                    A mock food subscription website that implements responsive
-                    web-design techniques.
-                  </p>
-                </div>
+                </a>
+              </div>
+              <div class="slider-content">
+                <h2 class="slider-header">Omnifood Website</h2>
+                <p class="slider-description">
+                  A mock food subscription website that implements responsive
+                  web-design techniques.
+                </p>
               </div>
             </div>
             <div class="slider slider-2">
-              <div class="slider-items flex-container">
-                <div class="img-slider">
+              <div class="img-slider">
+                <a href="huali235.github.io/online-calculator/" target="_blank">
                   <img
                     src="./imgs/calculator-screenshot.jpg"
                     alt="calculator"
                   />
-                </div>
-                <div class="slider-content">
-                  <h2 class="slider-header">Online Calculator</h2>
-                  <p class="slider-description">
-                    A basic 4 function calculator implementing basic JavaScript
-                    logic.
-                  </p>
-                </div>
+                </a>
+              </div>
+              <div class="slider-content">
+                <h2 class="slider-header">Online Calculator</h2>
+                <p class="slider-description">
+                  A basic 4 function calculator implementing basic JavaScript
+                  logic.
+                </p>
               </div>
             </div>
             <div class="slider slider-3">
-              <div class="slider-items flex-container">
-                <div class="img-slider">
+              <div class="img-slider">
+                <a href="huali235.github.io/dice-game/" target="_blank">
                   <img src="./imgs/dice-game-screenshot.png" alt="dice-game" />
-                </div>
-                <div class="slider-content">
-                  <h2 class="slider-header">Dice Game</h2>
-                  <p class="slider-description">
-                    A 2 player dice game. First player to reach 100 wins!
-                  </p>
-                </div>
+                </a>
+              </div>
+              <div class="slider-content">
+                <h2 class="slider-header">Dice Game</h2>
+                <p class="slider-description">
+                  A 2 player dice game. First player to reach 100 wins!
+                </p>
               </div>
             </div>
-            <button class="btn-slider-up">
-              <img
-                src="./imgs/arrow-up-outline.svg"
-                alt="arrow-up"
-                width="55px"
-                height="55px"
-              />
-            </button>
-            <button class="btn-slider-down">
-              <img
-                src="./imgs/arrow-down-outline.svg"
-                alt="arrow-down"
-                width="55px"
-                height="55px"
-              />
-            </button>
-            <div class="dots"></div>
           </div>
+          <button class="btn-slider-up">
+            <img
+              src="./imgs/arrow-up-outline.svg"
+              alt="arrow-up"
+              width="45px"
+              height="45px"
+            />
+          </button>
+          <button class="btn-slider-down">
+            <img
+              src="./imgs/arrow-down-outline.svg"
+              alt="arrow-down"
+              width="45px"
+              height="45px"
+            />
+          </button>
+          <div class="dots"></div>
         </div>
       </section>
     </main>
   </body>
+  <footer>
+    <p class="footer-descr">Developed By Hussain Ali 👍</p>
+    <ul class="social-links">
+      <li><a class="link" href="mailto:huali235@gmail.com">Email</a></li>
+      <li>
+        <a class="link" href="https://github.com/huali235" target="_blank"
+          >Github</a
+        >
+      </li>
+    </ul>
+  </footer>
 </html>
