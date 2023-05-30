@@ -11,13 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/keyframes.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
     <main>
+      <div class="switch-container">
+        <div class="sun-img"></div>
+        <div class="toggle">
+          <input type="checkbox" id="switch" />
+          <label for="switch" id="toggle"></label>
+        </div>
+        <div class="moon-img"></div>
+      </div>
       <section class="intro-section">
-        <p class="intro-greeting">Hey! <span>👋</span></p>
+        <p class="intro-greeting">Hey! <span class="hand-wave">👋</span></p>
         <p class="intro-description">
           I'm <span class="name">Hussain Ali</span>, an aspiring front-end
           software engineer passionate about creating dynamic and engaging

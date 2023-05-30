@@ -71,14 +71,83 @@ h6 {
 :root {
   --heading-font-family: 'Karla', sans-serif;
   --main-font-color: #1971c2;
+  --background-color: white;
+  --font-color: #000;
   --font-weight-300: 300;
   --font-weight-500: 500;
 }
 
+body.night {
+  --background-color: #171c28;
+  --font-color: #afafbf;
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--font-color);
   font-family: var(--heading-font-family);
   font-weight: var(--font-weight-300);
   margin: 0 auto;
+  position: relative;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  top: 25px;
+  right: 45px;
+}
+
+.toggle input[type='checkbox'] {
+  display: none;
+}
+
+.toggle label {
+  cursor: pointer;
+  width: 45px;
+  height: 25px;
+  background: #e2ba2a;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+
+.toggle label::after {
+  transition: all ease-in-out 0.3s;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: var(--background-color);
+  border-radius: 100%;
+}
+
+.toggle input[type='checkbox']:checked ~ label {
+  background-color: #00a0fc;
+  border-color: #006dc9;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+  background-color: #0054b0;
+  transform: translateX(21px);
+}
+
+.moon-img {
+  background-image: url(/imgs/moon-outline.svg);
+  width: 22px;
+  height: 22px;
+  filter: invert(80%);
+}
+
+.sun-img {
+  background-image: url(/imgs/sunny-outline.svg);
+  width: 22px;
+  height: 22px;
 }
 
 .intro-section {
@@ -89,6 +158,18 @@ body {
   padding-right: 37rem;
   font-size: 2.6rem;
   height: 100vh;
+}
+
+.hand-wave:hover {
+  display: inline-block;
+  animation-name: waving;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
 }
 
 .intro-description {
@@ -107,7 +188,11 @@ body {
   text-decoration: none;
   color: inherit;
   border-left: 2px solid var(--main-font-color);
-  background: linear-gradient(to left, white 50%, var(--main-font-color) 50%)
+  background: linear-gradient(
+      to left,
+      var(--background-color) 50%,
+      var(--main-font-color) 50%
+    )
     right;
   background-size: 200%;
   transition: 0.3s ease-in-out;

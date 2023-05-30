@@ -32,3 +32,15 @@ const init = function () {
 init();
 btnDown.addEventListener('click', nextSlide);
 btnUp.addEventListener('click', prevSlide);
+
+// Toggle theme
+
+const bodyEl = document.body;
+const toggle = document.getElementById('switch');
+
+toggle.addEventListener('input', function (e) {
+  const isChecked = e.target.checked;
+  if (isChecked) {
+    bodyEl.classList.add('night');
+  } else bodyEl.classList.remove('night');
+});
