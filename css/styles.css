@@ -290,6 +290,12 @@ body {
   font-size: 1.2rem;
 }
 
+.arrow-up,
+.arrow-down {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
 .btn-slider-up,
 .btn-slider-down {
   border: none;
